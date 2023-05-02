@@ -1,1 +1,1 @@
-# python_lab
+# Weather application
