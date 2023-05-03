@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body, .wrapper{
+  height: 100%;
+}
+
+body {
+    background: #2c2c2c;
+}
+aside{
+    min-height: 100%;
+    padding-bottom: 90px;
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+aside img{
+    width: 30%;
+    height: 30%;
+    float: left;
+}
+aside .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo-div{
+    display: flex;
+}
+
+aside ul {
+     list-style: none;
+}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .6s ease;
+}
+
+aside ul li i {
+    margin-right: 10px;
+
+}
+
+aside ul a {
+    transition: transform .6s ease;
+    text-decoration: none;
+}
+
+aside ul li:hover,
+aside ul a:hover {
+    color: #0096FF;
+    transform: scale(1.05);
+}
+
+main{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 30px;
+    text-align: center;
+    width: 88%;
+}
+
+main .features h1 {font-size: 50px}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 20px;
+}
