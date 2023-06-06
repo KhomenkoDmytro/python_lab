@@ -6,16 +6,24 @@
         <p>Just paragraph</p>
         <div class="container" style="display: flex; justify-content: space-around; align-items: center; width: 100%">
                 <div>
-                    <form action="" method="post"
+                    <form method="post"
                     style="margin-left: 0; width: 100%;">
                         {% csrf_token %}
                         <label for="city">City</label>
                         {{ form.name }}
                         <input type="submit" name="send" value="Find" class="mt-2 btn btn-primary">
+                        {% if form.errors %}
+                        {% for field in form %}
+                            {% for error in field.errors %}
+                                <p class="error-message">{{ error }}</p>
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+                    {% if success_message %}
+                        <p class="success-message">{{ success_message }}</p>
+                    {% endif %}
                     </form>
                 </div>
-
-
                 <div>
                     <span>Info</span>
                     {% for info in all_info %}
