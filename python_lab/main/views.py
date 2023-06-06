@@ -2,9 +2,10 @@ from django.shortcuts import render
 import requests
 from .models import City
 from .forms import CityForm
+from django.conf import settings
 
 def index(request):
-    appid = '694084e773a14b3e7ca9d68ce25830f0'
+    appid = settings.APPID
     url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=' + appid
 
     if request.method == 'POST':
@@ -44,3 +45,6 @@ def index(request):
 
 def about(request):
     return render(request, 'main/about.html')
+
+def contacts(request):
+    return render(request, 'main/contacts.html')
