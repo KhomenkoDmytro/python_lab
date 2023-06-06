@@ -1,8 +1,7 @@
 pycache
 *.py[cod]
 *$py.class
-db.sqlite3
-# Distribution / packaging 
+# Distribution / packaging
 .Python build/ 
 develop-eggs/ 
 dist/ 
